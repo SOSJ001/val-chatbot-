@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google';
-import Head from 'next/head';
+// import Head from 'next/head';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -12,9 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      {/* <Head> */}
         <script async src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-      </Head>
+      {/* </Head> */}
       <body className={inter.className}>
         {children}
         <df-messenger
